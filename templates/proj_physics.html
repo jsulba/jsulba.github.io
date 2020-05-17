@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>{% block title %} {{ super() }} - Project Physics Mini Games{% endblock %}</title>
+{{super()}}
+{% block style %}
+<style>
+    h1 {
+        margin-top: 20px;
+    }
+</style>{% endblock %}
+{% endblock %}
+
+
+{% block content %}
+<!-- Content -->
+<!-- This description will follow closely to the format used in the quantum sim project. The general idea for the template
+    remains the same. -->
+<div class="container-fluid" style="margin-top: 10px; margin-left: 30px">
+    <h1>Physics Mini Games</h1>
+    <p>More information to come. (This project does not have a Devpost link).</p><br/>
+</div>
+{% endblock %}
+<!-- These project pages are not main pages, so they don't include a footer. Allows the user to focus on the project
+description -->

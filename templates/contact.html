@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>{% block title %} {{ super() }} - Contact{% endblock %}</title>
+    {{ super() }}
+    {% block style %}
+        <style>
+            .jumbo {
+                background-color: #444444;
+                font-family: Spartan;
+            }
+
+            #pageheader {
+                padding-bottom: 32px;
+            }
+
+            #pagetitle {
+                margin-left: 0px;
+            }
+
+            #pagetitle h1 {
+                color: white;
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 48px;
+            }
+
+            h3 {
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+
+            #contact {
+                font-family: Spartan;
+            }
+        </style>{% endblock %}
+{% endblock %}
+
+
+{% block content %}
+    <!-- Page Title -->
+    {% block page %}
+        {{ super() }}
+    {% endblock %}
+
+    <!-- Content -->
+    <div id="contact" class="d-flex">
+        <div class="p-2 flex-grow-1">
+
+        </div>
+        <div class="p-2 bg-dark">
+
+        </div>
+    </div>
+{% endblock %}
+
+<!-- Footer would be redundant here. -->
+{% block footer %}
+{% endblock %}
