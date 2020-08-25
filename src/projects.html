@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>{% block title %} {{ super() }} - Projects{% endblock %}</title>
+    {{ super() }}
+    {% block style %}
+        <style>
+            .jumbo {
+                background-color: #444444;
+                font-family: Spartan;
+            }
+
+            #pageheader {
+                padding-bottom: 32px;
+            }
+
+            #pagetitle {
+                margin-left: 0px;
+            }
+
+            #pagetitle h1 {
+                color: white;
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 48px;
+            }
+
+            div img {
+                height: 200px;
+                width: 300px;
+            }
+
+            #grid {
+                margin-top: 30px;
+            }
+
+            h4, p {
+                color: white;
+            }
+
+            #footer {
+                left: 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                margin: 0px;
+                background-color: #555555;
+            }
+
+            #footer i {
+                color: white;
+                margin: 0px;
+                padding: 20px;
+                font-size: 24px;
+            }
+
+            .fa:hover {
+                opacity: 50%;
+            }
+        </style>{% endblock %}
+{% endblock %}
+
+
+{% block content %}
+    <!-- Page Title -->
+    {% block page %}
+        {{ super() }}
+    {% endblock %}
+
+    <!-- Card Grid -->
+    <div id="grid" class="card-columns">
+        <div class="card bg-dark">
+            <img class="card-img-top" src="/static/images/quantum_sim.jpg" alt="Quantum image">
+            <div class="card-body text-center">
+                <h4 class="card-title">Quantum Sim</h4>
+                <p class="card-text">A visual simulation tool for a system of a few qubits.</p>
+                <a href="/proj_quantum" class="btn bg-secondary stretched-link">See Project</a>
+            </div>
+        </div>
+        <div class="card bg-dark">
+            <img class="card-img-top" src="/static/images/soultunes.JPG" alt="Soultunes image">
+            <div class="card-body text-center">
+                <h4 class="card-title">Soultunes</h4>
+                <p class="card-text">An app that allows a user to search music by artist or let the app play music based
+                    on the weather.</p>
+                <a href="/proj_soultunes" class="btn bg-success stretched-link">See Project</a>
+            </div>
+        </div>
+        <div class="card bg-dark">
+            <img class="card-img-top" src="/static/images/physics_mini_games.JPG" alt="Physics image">
+            <div class="card-body text-center">
+                <h4 class="card-title">Physics Mini Games</h4>
+                <p class="card-text">An app hosting three physics mini games, allowing a fun learning experience.</p>
+                <a href="/proj_physics" class="btn bg-info stretched-link">See Project</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+{% endblock %}

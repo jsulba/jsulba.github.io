@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>{% block title %} {{ super() }} - Soultunes Project{% endblock %}</title>
+{{super()}}
+{% block style %}
+<style>
+    h1 {
+        margin-top: 20px;
+    }
+</style>{% endblock %}
+{% endblock %}
+
+
+{% block content %}
+<!-- Content -->
+<div class="container-fluid" style="margin-top: 10px; margin-left: 30px">
+    <!-- This description will follow closely to the format used in the quantum sim project. The general idea for the template
+    remains the same. -->
+    <h1>Soultunes</h1>
+    <p> Section containing information on the project with images, tables, etc.</p> <br/>
+    <p>For more information, visit the <a href="https://devpost.com/software/soul-tunes" target="_blank">Devpost page</a>.</p><br/>
+</div>
+{% endblock %}
+
+<!-- These project pages are not main pages, so they don't include a footer. Allows the user to focus on the project
+description -->

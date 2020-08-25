@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Jose Fernandez Portfolio{% endblock %}</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {% block style %}
+        <style>
+            .jumbo {
+                background-color: slategray;
+                margin-bottom: 0px;
+                font-family: Spartan;
+            }
+
+            h1, p {
+                text-align: center;
+            }
+
+            #footer {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                margin: 0px;
+                background-color: #444444;
+            }
+
+            #footer i {
+                color: white;
+                margin: 0px;
+                padding: 20px;
+                font-size: 50px;
+            }
+
+            .fa:hover {
+                opacity: 50%;
+            }
+        </style>{% endblock %}
+{% endblock %}
+</head>
+<body style="background-color: wheat">
+
+<!-- Nav bar block -->
+{% block navbar %}
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <a class="navbar-brand" href="/" style="font-family: 'Dancing Script', cursive; font-size: 1.3rem">Jose
+            Fernandez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto" style="font-family: Spartan">
+                <li class="nav-item {% if current=="home" %} active {% endif %}">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item {% if current=="about" %} active {% endif %}">
+                    <a class="nav-link" href="/about_me">About Me</a>
+                </li>
+                <!-- The featured project will eventually link to a local page -->
+                <li class="nav-item dropdown {% if current=="projects" %} active {% endif %}">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Projects</a>
+                    <div class="dropdown-menu dropdown-menu-right" style="position: absolute; z-index: 1">
+                        <h5 class="dropdown-header">Featured Projects</h5>
+                        <a class="dropdown-item" href="/proj_quantum">Quantum Computer Sim</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/projects">All Projects</a>
+                    </div>
+                </li>
+                <li class="nav-item {% if current=="contact" %} active {% endif %}">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+
+<!-- Content block -->
+{% block content %}
+    {% block page %}
+        <div id="pageheader" class="jumbotron jumbotron-fluid jumbo">
+            <div id="pagetitle" class="container">
+                <h1 class="display-4">{{ title }}</h1>
+                <p>{{ subtitle }}</p>
+            </div>
+        </div>
+    {% endblock %}
+    <div class="d-flex">
+        <img class="img-fluid flex-grow-1" src="/static/images/rainy_room.gif" alt="Background">
+    </div>
+{% endblock %}
+{% block footer %}
+    <footer class="page-footer special-color-dark">
+        <div id="footer" class="d-flex justify-content-center">
+            <a href="https://www.linkedin.com/in/jose-ale-fernandez/" target="_blank"><i
+                    class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Joselegenda" target="_blank"><i class="fa fa-github justify-content-*"></i></a>
+        </div>
+    </footer>
+{% endblock %}
+</body>
+</html>
