@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/jsulba.github.io/static/css/main.9fff4e3a.chunk.css",
-    "main.js": "/jsulba.github.io/static/js/main.8a5baca4.chunk.js",
-    "main.js.map": "/jsulba.github.io/static/js/main.8a5baca4.chunk.js.map",
+    "main.css": "/jsulba.github.io/static/css/main.f6907e32.chunk.css",
+    "main.js": "/jsulba.github.io/static/js/main.615910c6.chunk.js",
+    "main.js.map": "/jsulba.github.io/static/js/main.615910c6.chunk.js.map",
     "runtime-main.js": "/jsulba.github.io/static/js/runtime-main.7a6d98c8.js",
     "runtime-main.js.map": "/jsulba.github.io/static/js/runtime-main.7a6d98c8.js.map",
-    "static/js/2.0a02022d.chunk.js": "/jsulba.github.io/static/js/2.0a02022d.chunk.js",
-    "static/js/2.0a02022d.chunk.js.map": "/jsulba.github.io/static/js/2.0a02022d.chunk.js.map",
+    "static/js/2.620717e7.chunk.js": "/jsulba.github.io/static/js/2.620717e7.chunk.js",
+    "static/js/2.620717e7.chunk.js.map": "/jsulba.github.io/static/js/2.620717e7.chunk.js.map",
     "index.html": "/jsulba.github.io/index.html",
-    "precache-manifest.9a1881a2c3a384a5d6274b7ff7c6aece.js": "/jsulba.github.io/precache-manifest.9a1881a2c3a384a5d6274b7ff7c6aece.js",
+    "precache-manifest.d2726db2d9166252a858bfc782055383.js": "/jsulba.github.io/precache-manifest.d2726db2d9166252a858bfc782055383.js",
     "service-worker.js": "/jsulba.github.io/service-worker.js",
-    "static/css/main.9fff4e3a.chunk.css.map": "/jsulba.github.io/static/css/main.9fff4e3a.chunk.css.map",
-    "static/js/2.0a02022d.chunk.js.LICENSE.txt": "/jsulba.github.io/static/js/2.0a02022d.chunk.js.LICENSE.txt",
+    "static/css/main.f6907e32.chunk.css.map": "/jsulba.github.io/static/css/main.f6907e32.chunk.css.map",
+    "static/js/2.620717e7.chunk.js.LICENSE.txt": "/jsulba.github.io/static/js/2.620717e7.chunk.js.LICENSE.txt",
     "static/media/20191011_174349_HDR.jpg": "/jsulba.github.io/static/media/20191011_174349_HDR.08191e53.jpg",
     "static/media/20200327_224231.jpg": "/jsulba.github.io/static/media/20200327_224231.25e785fb.jpg",
     "static/media/20200328_000556.jpg": "/jsulba.github.io/static/media/20200328_000556.7a1c4b83.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7a6d98c8.js",
-    "static/js/2.0a02022d.chunk.js",
-    "static/css/main.9fff4e3a.chunk.css",
-    "static/js/main.8a5baca4.chunk.js"
+    "static/js/2.620717e7.chunk.js",
+    "static/css/main.f6907e32.chunk.css",
+    "static/js/main.615910c6.chunk.js"
   ]
 }
