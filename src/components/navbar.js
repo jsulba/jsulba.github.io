@@ -1,26 +1,14 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import PersonIcon from '@material-ui/icons/Person';
-import HomeWorkIcon from '@material-ui/icons/HomeWork';
+import { Toolbar, IconButton, Typography, List, ListItem, ListItemIcon, ListItemText, Accordion, AccordionSummary, AccordionDetails, Button, ButtonGroup, Divider } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import MenuIcon  from '@material-ui/icons/Menu';
+import PersonIcon  from '@material-ui/icons/Person';
 import CreateIcon from '@material-ui/icons/Create';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import HomeIcon from '@material-ui/icons/Home';
-import Divider from '@material-ui/core/Divider';
-import { Link } from 'react-router-dom';
+import HomeWorkIcon from '@material-ui/icons/HomeWork';
 
 
 // Styles for navbar
@@ -46,19 +34,13 @@ const useStyles = makeStyles((theme) => ({
 
 // Navigation component to be used in every view
 export default function Navbar() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
     const [drawer, setDrawer] = React.useState(false);
 
     // Page: Welcome-0, AboutMe-1, Projects-2, Blog-3
     const [page, setPage] = React.useState(-1);
 
     const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
         setDrawer(!drawer);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
     };
 
     const determineIcon = (index) => {
@@ -107,7 +89,7 @@ export default function Navbar() {
     const classes = useStyles();
 
     return (
-        <div id="wrapper" className={classes.root}>
+        <div className={classes.root}>
             <Accordion expanded={drawer}>
                 <AccordionSummary>
                 <Toolbar className={classes.fullWidth}>
