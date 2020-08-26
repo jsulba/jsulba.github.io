@@ -23,7 +23,8 @@ const useStyles = makeStyles((theme) => ({
       margin: "0px"
     },
     div: {
-      marginBottom: "20px",
+      marginBottom: "2%",
+      marginTop: "5%",
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -61,8 +62,10 @@ export default function Welcome() {
     const classes = useStyles();
     return(
       <div>
-        <h2 className={classes.welcomeTitle}>Take a look around and get to know me!</h2>
-        <p className={classes.welcomeSubTitle}>"Isn't funny how day by day, nothing seems to change? Yet when you look back, everything is different"...</p>
+        <div id="welcome">
+          <h2 className={classes.welcomeTitle}>Take a look around and get to know me!</h2>
+          <p className={classes.welcomeSubTitle}>"Isn't it funny how day by day, nothing seems to change? Yet when you look back, everything is different"...</p>
+        </div>
         <Divider className={classes.div}/>
         <div>
           <h3 className={classes.title}>Technical Toolset</h3>
@@ -77,9 +80,10 @@ export default function Welcome() {
           </Grid>
         </div>
         <Divider className={classes.div}/>
-        <Grid container className={classes.root} spacing={3} justify="space-evenly" alignItems="stretch">
+        <h3 className={classes.title}>Gallery</h3>
+        <Grid container className={classes.root} spacing={3} justify="space-evenly" alignItems="flex-end">
           <Grid item xs={6} >
-            <Paper><img src={forest} className={classes.image} alt={""} /></Paper>
+            <Paper><img id="forestImage" src={forest} className={classes.image} alt={""} /></Paper>
           </Grid>
           <Grid item xs={3} >
             <Paper><img src={feet} className={classes.image} alt={""} /></Paper>
@@ -88,12 +92,12 @@ export default function Welcome() {
             <Paper><img src={frisbee} className={classes.image} alt={""} /></Paper>
           </Grid>
         </Grid>
-        <Grid container className={classes.root} spacing={3} justify="space-around" alignItems="center">
+        <Grid container className={classes.root} spacing={3} justify="space-around" alignItems="stretch">
+          <Grid item xs={6} >
+            <Paper><img id="sunsetVoyageur" src={voyageur} className={classes.image} alt={""} /></Paper>
+          </Grid>
           <Grid item xs={3} >
             <Paper><img src={nike} className={classes.image} alt={""} /></Paper>
-          </Grid>
-          <Grid item xs={6} >
-            <Paper><img src={voyageur} className={classes.image} alt={""} /></Paper>
           </Grid>
           <Grid item xs={3} >
             <Paper><img src={expo} className={classes.image} alt={""} /></Paper>
@@ -101,7 +105,7 @@ export default function Welcome() {
         </Grid>
         <Grid container className={classes.root} spacing={3} justify="flex-end" alignItems="stretch">
         <Grid item xs >
-            <Paper><img src={board} className={classes.image} alt={""} /></Paper>
+            <Paper><img id="skateboard" src={board} className={classes.image} alt={""} /></Paper>
           </Grid>
         </Grid>
       </div>

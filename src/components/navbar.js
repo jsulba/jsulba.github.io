@@ -15,6 +15,10 @@ import HomeWorkIcon from '@material-ui/icons/HomeWork';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+        position: "fixed",
+        top: 0,
+        width: "100%",
+        zIndex: 99999,
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -75,12 +79,12 @@ export default function Navbar() {
         <div className={classes.fullWidth}>
             <List className={classes.grow}>
                 {['About Me', 'Projects', 'Blog'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <Link to={determinePath(index)} className="link" onClick={(event) => {event.stopPropagation(); setDrawer(false); setPage(index)}}>
+                    <Link to={determinePath(index)} className="link" onClick={(event) => {event.stopPropagation(); setDrawer(false); setPage(index)}}>
+                        <ListItem button key={text}>
                             <ListItemIcon>{determineIcon(index)}</ListItemIcon>
                             <ListItemText primary={text} />
-                        </Link>
-                    </ListItem>
+                        </ListItem>
+                    </Link>
                 ))}
             </List>
         </div>
@@ -93,8 +97,8 @@ export default function Navbar() {
             <Accordion expanded={drawer}>
                 <AccordionSummary>
                 <Toolbar className={classes.fullWidth}>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon onClick={handleClick}/>
+                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={handleClick}>
+                        <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.grow}>
                         {determinePage(page)}
@@ -112,6 +116,7 @@ export default function Navbar() {
                 <Divider />
                 <AccordionDetails>
                     {list()}
+                    <Divider />
                 </AccordionDetails>
             </Accordion>
         </div>
