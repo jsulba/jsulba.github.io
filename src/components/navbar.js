@@ -79,7 +79,7 @@ export default function Navbar() {
         <div className={classes.fullWidth}>
             <List className={classes.grow}>
                 {['About Me', 'Projects', 'Blog'].map((text, index) => (
-                    <Link to={determinePath(index)} className="link" onClick={(event) => {event.stopPropagation(); setDrawer(false); setPage(index)}}>
+                    <Link to={determinePath(index)} className="link" onClick={(event) => {event.stopPropagation(); setDrawer(false); setPage(index)}} key={text}>
                         <ListItem button key={text}>
                             <ListItemIcon>{determineIcon(index)}</ListItemIcon>
                             <ListItemText primary={text} />
@@ -107,7 +107,7 @@ export default function Navbar() {
                         Jose Fernandez
                     </Typography>
                     <ButtonGroup variant="text">
-                        <Link to="/"><Button color="inherit" onClick={(event) => {event.stopPropagation(); setPage(-1)}}><HomeIcon /></Button></Link>
+                        <Link to="/"><Button color="inherit" onClick={(event) => {event.stopPropagation(); setPage(-1); setDrawer(false);}}><HomeIcon /></Button></Link>
                         <a href="https://github.com/jsulba"><Button color="inherit"><GitHubIcon /></Button></a>
                         <a href="https://www.linkedin.com/in/jose-ale-fernandez/"><Button color="inherit"><LinkedInIcon /></Button></a>
                     </ButtonGroup>

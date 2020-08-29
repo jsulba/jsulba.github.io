@@ -35,11 +35,11 @@ code {
 } */
 
 .MuiButtonBase-root.MuiListItem-root.MuiListItem-gutters.MuiListItem-button:hover{
-  border-bottom: 1px solid rgba(102, 40, 192, 0.815);
+  border-bottom: 1px solid rgba(2, 38, 240, 0.815);
 }
 
 svg{
-  color: rgb(102, 40, 192);
+  color: rgb(9, 13, 226);
 }
 
 #forestImage, #sunsetVoyageur {
@@ -50,10 +50,11 @@ svg{
   max-width: 98%;
 }
 
-.makeStyles-par-10 .MuiDivider-root{
+
+/* .makeStyles-par-10 .MuiDivider-root{
   background-color: white;
   opacity: 1;
-}
+} */
 
 /* .MuiCollapse-container.MuiCollapse-entered{
   background-color: rgb(233, 235, 236);
@@ -67,11 +68,24 @@ svg{
   background-color: rgba(240, 240, 240, 0.815);
 } */
 
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-true img{
+  padding-left: 33px;
+}
+
 #techStack {
   margin-bottom: 2em;
   margin-left: 0px;
   margin-right: 0px;
   max-width: 100%;
+}
+
+#techStack img {
+  width: 64px;
+  height: 64px;
+}
+
+.gallery img {
+  max-height: 400px;
 }
 
 /* #techStack img {

@@ -65,13 +65,11 @@ export default function AboutMe() {
               Image or icon
             </Grid>
             <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <div className={classes.par}>
-                  <h3 className={classes.title}>{par.title}</h3>
-                  <Divider />
-                  <p className={classes.text}>{par.text}</p>
-                </div>
-              </Paper>
+              <div className={classes.par}>
+                <h3 className={classes.title}>{par.title}</h3>
+                <Divider />
+                <p className={classes.text}>{par.text}</p>
+              </div>
             </Grid>
             <Grid item xs={3}>
             </Grid>
