@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7a3042b95794c0586167c8b9441041c2",
+    "revision": "2702a36f9b367ec70b5fc180f8521636",
     "url": "/jsulba.github.io/index.html"
   },
   {
-    "revision": "72d2db08f0b949b78dd4",
-    "url": "/jsulba.github.io/static/css/main.73f3fa9b.chunk.css"
+    "revision": "76fbb2d781ae366764f2",
+    "url": "/jsulba.github.io/static/css/main.0710a111.chunk.css"
   },
   {
-    "revision": "edb507b8355536eebd13",
-    "url": "/jsulba.github.io/static/js/2.15d80a87.chunk.js"
+    "revision": "0bfd853ed779fb0794ac",
+    "url": "/jsulba.github.io/static/js/2.9234e3ec.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/jsulba.github.io/static/js/2.15d80a87.chunk.js.LICENSE.txt"
+    "url": "/jsulba.github.io/static/js/2.9234e3ec.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "72d2db08f0b949b78dd4",
-    "url": "/jsulba.github.io/static/js/main.bcd6766d.chunk.js"
+    "revision": "76fbb2d781ae366764f2",
+    "url": "/jsulba.github.io/static/js/main.b070ad43.chunk.js"
   },
   {
     "revision": "b846e6bab48defb0cdda",
@@ -52,7 +52,27 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jsulba.github.io/static/media/Screenshot_20200825-224033_Video Player.19cca80c.jpg"
   },
   {
+    "revision": "6d29f4e23ea600860bd2f0e9de4bdc43",
+    "url": "/jsulba.github.io/static/media/concordia.6d29f4e2.jpg"
+  },
+  {
+    "revision": "da5951edcce2e732ad0ba23139a2e660",
+    "url": "/jsulba.github.io/static/media/hobbies.da5951ed.png"
+  },
+  {
     "revision": "5b3fb74dddc53359086bafe5226fc3aa",
     "url": "/jsulba.github.io/static/media/jqui.5b3fb74d.png"
+  },
+  {
+    "revision": "0181ea0ee76ef095e855eb9fa0658493",
+    "url": "/jsulba.github.io/static/media/loading.0181ea0e.png"
+  },
+  {
+    "revision": "47b476821b08bb22b5b794ebb58e424e",
+    "url": "/jsulba.github.io/static/media/progress.47b47682.png"
+  },
+  {
+    "revision": "37ceef4f889ea62e13904ea10fa80f61",
+    "url": "/jsulba.github.io/static/media/vanier.37ceef4f.jpg"
   }
 ]);

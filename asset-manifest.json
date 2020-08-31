@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/jsulba.github.io/static/css/main.73f3fa9b.chunk.css",
-    "main.js": "/jsulba.github.io/static/js/main.bcd6766d.chunk.js",
-    "main.js.map": "/jsulba.github.io/static/js/main.bcd6766d.chunk.js.map",
+    "main.css": "/jsulba.github.io/static/css/main.0710a111.chunk.css",
+    "main.js": "/jsulba.github.io/static/js/main.b070ad43.chunk.js",
+    "main.js.map": "/jsulba.github.io/static/js/main.b070ad43.chunk.js.map",
     "runtime-main.js": "/jsulba.github.io/static/js/runtime-main.7a6d98c8.js",
     "runtime-main.js.map": "/jsulba.github.io/static/js/runtime-main.7a6d98c8.js.map",
-    "static/js/2.15d80a87.chunk.js": "/jsulba.github.io/static/js/2.15d80a87.chunk.js",
-    "static/js/2.15d80a87.chunk.js.map": "/jsulba.github.io/static/js/2.15d80a87.chunk.js.map",
+    "static/js/2.9234e3ec.chunk.js": "/jsulba.github.io/static/js/2.9234e3ec.chunk.js",
+    "static/js/2.9234e3ec.chunk.js.map": "/jsulba.github.io/static/js/2.9234e3ec.chunk.js.map",
     "index.html": "/jsulba.github.io/index.html",
-    "precache-manifest.7dea1c264b5ca2ebb5a7c0c4d46a56ae.js": "/jsulba.github.io/precache-manifest.7dea1c264b5ca2ebb5a7c0c4d46a56ae.js",
+    "precache-manifest.2d198f5763aa1e1866ddbc224b651ee1.js": "/jsulba.github.io/precache-manifest.2d198f5763aa1e1866ddbc224b651ee1.js",
     "service-worker.js": "/jsulba.github.io/service-worker.js",
-    "static/css/main.73f3fa9b.chunk.css.map": "/jsulba.github.io/static/css/main.73f3fa9b.chunk.css.map",
-    "static/js/2.15d80a87.chunk.js.LICENSE.txt": "/jsulba.github.io/static/js/2.15d80a87.chunk.js.LICENSE.txt",
+    "static/css/main.0710a111.chunk.css.map": "/jsulba.github.io/static/css/main.0710a111.chunk.css.map",
+    "static/js/2.9234e3ec.chunk.js.LICENSE.txt": "/jsulba.github.io/static/js/2.9234e3ec.chunk.js.LICENSE.txt",
     "static/media/20191011_174349_HDR.jpg": "/jsulba.github.io/static/media/20191011_174349_HDR.08191e53.jpg",
     "static/media/20200327_224231.jpg": "/jsulba.github.io/static/media/20200327_224231.25e785fb.jpg",
     "static/media/20200328_000556.jpg": "/jsulba.github.io/static/media/20200328_000556.7a1c4b83.jpg",
@@ -19,12 +19,17 @@
     "static/media/20200725_155849.jpg": "/jsulba.github.io/static/media/20200725_155849.38de8657.jpg",
     "static/media/20200816_171612.jpg": "/jsulba.github.io/static/media/20200816_171612.4cef2b0d.jpg",
     "static/media/Screenshot_20200825-224033_Video Player.jpg": "/jsulba.github.io/static/media/Screenshot_20200825-224033_Video Player.19cca80c.jpg",
-    "static/media/jqui.png": "/jsulba.github.io/static/media/jqui.5b3fb74d.png"
+    "static/media/concordia.jpg": "/jsulba.github.io/static/media/concordia.6d29f4e2.jpg",
+    "static/media/hobbies.png": "/jsulba.github.io/static/media/hobbies.da5951ed.png",
+    "static/media/jqui.png": "/jsulba.github.io/static/media/jqui.5b3fb74d.png",
+    "static/media/loading.png": "/jsulba.github.io/static/media/loading.0181ea0e.png",
+    "static/media/progress.png": "/jsulba.github.io/static/media/progress.47b47682.png",
+    "static/media/vanier.jpg": "/jsulba.github.io/static/media/vanier.37ceef4f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7a6d98c8.js",
-    "static/js/2.15d80a87.chunk.js",
-    "static/css/main.73f3fa9b.chunk.css",
-    "static/js/main.bcd6766d.chunk.js"
+    "static/js/2.9234e3ec.chunk.js",
+    "static/css/main.0710a111.chunk.css",
+    "static/js/main.b070ad43.chunk.js"
   ]
 }
