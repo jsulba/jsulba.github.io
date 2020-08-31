@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
     gallery: {
       marginTop: "2%",
     },
+    logo: {
+      marginLeft: "33px"
+    },
     menuButton: {
       marginRight: theme.spacing(2),
     },
@@ -113,17 +116,17 @@ export default function Welcome() {
         <div className={classes.toolset}>
           <h3 className={classes.title}>Software Skills</h3>
           <Grid id="techStack" container justify="space-around" spacing={1} className={classes.restrict}>
-            <Grid item xs justify="center"><img src={java} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={js} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={html} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={css} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={ts} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={py} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={php} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={react} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={ang} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={jq} alt={""} /></Grid>
-            <Grid item xs justify="center"><img src={jqui} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={java} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={js} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={html} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={css} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={ts} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={py} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={php} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={react} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={ang} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={jq} alt={""} /></Grid>
+            <Grid item xs className={classes.logo}><img src={jqui} alt={""} /></Grid>
           </Grid>
         </div>
         <div className={classes.cardHolder}>

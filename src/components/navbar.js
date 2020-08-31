@@ -33,6 +33,8 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         fontStyle: "italic",
         fontWeight: "lighter",
+        position: "relative",
+        left: "5%"
     },
 }));
 
@@ -101,7 +103,7 @@ export default function Navbar() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.grow}>
-                        {determinePage(page)}
+                        {/* {determinePage(page)} */}
                     </Typography>
                     <Typography className={classes.name}>
                         Jose Fernandez

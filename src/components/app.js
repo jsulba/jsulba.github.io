@@ -10,7 +10,7 @@ import Blog from './blog';
 export default function App() {
 
     return(
-        <div id="wrapper">
+        <div>
             <Navbar />
             <Switch>
                 <Route exact path="/" component={Welcome} />

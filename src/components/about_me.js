@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "left",
     },
     text: {
-      lineHeight: "2em",
+      lineHeight: "2.5em",
     },
     par: {
       padding: "15px",
@@ -43,6 +43,17 @@ const useStyles = makeStyles((theme) => ({
       overflow: "hidden",
       height: "500px",
       boxShadow: "0px 0px 5px grey",
+    },
+    sideIcon: {
+      width: "64px",
+      height: "64px",
+      float: "right",
+      marginTop: "1em"
+    },
+    sideImage: {
+      maxWidth: "95%",
+      height: "90%",
+      marginTop: "10%"
     }
 }));
 
@@ -61,8 +72,8 @@ export default function AboutMe() {
         <Divider />
         {paragraphs.map((par) => (
           <Grid container className={classes.root} spacing={5} justify="center" alignItems="flex-start">
-            <Grid item xs={3}>
-              Image or icon
+            <Grid item xs={3} justify="center">
+              <img src={par.images[0]} alt={""} className={classes.sideIcon} />
             </Grid>
             <Grid item xs={6}>
               <div className={classes.par}>
@@ -72,6 +83,7 @@ export default function AboutMe() {
               </div>
             </Grid>
             <Grid item xs={3}>
+              <img src={par.images[1]} alt={""} className={classes.sideImage} />
             </Grid>
           </Grid>
         ))}
