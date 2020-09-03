@@ -1,95 +1,97 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import load from '../assets/loading.png';
-import conc from '../assets/concordia.jpg';
-import { Table, TableBody, TableCell, TableHead, TableRow, TableContainer, Typography, Card, CardMedia, CardContent, Grid } from '@material-ui/core';
+import { Typography, Card, CardMedia, CardContent, Grid, Divider } from '@material-ui/core';
+import { projects } from "./info_objects";
 
 
 const useStyles = makeStyles((theme) => ({
-    stats: {
-      flexGrow: 1,
-      backgroundImage: "linear-gradient(to bottom right, rgba(62, 121, 247, 0.781), rgb(9, 13, 226))",
-      paddingTop: "5%",
-      paddingLeft: "20px",
-      paddingRight: "20px",
-      color: "white",
-    },
     card: {
-      minWidth: 800,
+      minWidth: 300,
       maxWidth: "100%",
-    },
-    cardHolder: {
-      flexGrow: 1,
-      maxWidth: "100%",
-      marginTop: "3%",
-      paddingBottom: "3%",
+      backgroundColor: "rgba(240, 240, 240, 0.815)"
     },
     cardTitle: {
       fontSize: "1.1em",
     },
-    cont: {
-      maxWidth: "100%",
-      background: "none",
-    },
     cover: {
       width: "100%",
-    },
-    loading: {
-      width: "1em",
-      height: "1em",
-      paddingRight: "5px",
-      position: "relative",
-      top: "2px"
+      height: "300px"
     },
     restrict: {
       maxWidth: "100%",
-      paddingBottom: "5%",
+      paddingBottom: "1.5em",
       marginLeft: "auto",
-      marginRight: "auto"
-    },
-    table: {
-      maxWidth: "94%",
-      color: "white",
-      marginLeft: "30px"
+      marginRight: "auto",
+      paddingTop: "2em"
     },
     title: {
       fontWeight: 300,
-      marginBottom: "0px",
-      marginTop: "2%"
-    },
-    summary: {
-      width: "100%",
-      textAlign: "center",
-      fontWeight: 300,
-      marginTop: "4em",
-      paddingBottom: "3em"
-    },
-    subtitle: {
-      fontWeight: 300,
-      marginTop: "3px",
-      opacity: 0.8,
-      fontStyle: "italic",
-      paddingLeft: "5px"
+      marginBottom: "0.5em",
     }
 }));
-
-const rows = [
-  {project: "Quantum Sim", type: "Simulation", tech: "Java, JavaFX", team: "4", mot: "Hackathon Project"},
-  {project: "Soultunes", type: "Applet", tech: "Java, JavaFX, Web APIs", team: "4", mot: "Hackathon Project"},
-  {project: "Physics Mini Games", type: "Game", tech: "Java, JavaFX", team: "4", mot: "School Project"},
-];
-
-const cards = [
-  {cat: "Simulation", title: "Quantum Sim", desc: "A simulation for a quantum computer...", img: conc},
-  {cat: "Applet", title: "Soultunes", desc: "App for listening to tunes based on the weather...", img: conc},
-  {cat: "Game", title: "Physics Mini Games", desc: "A game for teaching physics...", img: conc}
-];
 
 export default function Projects() {
     const classes = useStyles();
     return(
-      <div id="wrapper">
-        <div id="dataBanner" className={classes.stats}>
+      <div id="p_wrapper">
+        <div id="featured">
+          <h1 className={classes.title}>Featured</h1>
+          <Divider />
+          <Grid className={classes.restrict} spacing={5} container justify="flex-start" alignItems="center">
+            {projects.map((content) => {
+              if(content.feat){
+                return(
+                  <Grid item key={content.title} xs={4}>
+                    <Card className={classes.card}>
+                      <CardContent>
+                        <Typography className={classes.cardTitle} color="textSecondary" gutterBottom>
+                          {content.cat}
+                        </Typography>
+                        <Typography variant="h5" component="h2">
+                          {content.title}
+                        </Typography>
+                        <Typography variant="body2" component="p">
+                          {content.desc}
+                        </Typography>
+                      </CardContent>
+                      <CardMedia component="img" image={content.img} className={classes.cover} />
+                    </Card>
+                  </Grid>
+                );
+              }
+            })
+            }
+          </Grid>
+        </div>
+        <div id="projects">
+          <h1 className={classes.title}>All Projects</h1>
+          <Divider />
+          <Grid className={classes.restrict} spacing={5} container justify="flex-start" alignItems="center">
+            {projects.map((content) => (
+              <Grid item key={content.title} xs={4}>
+                <Card className={classes.card}>
+                  <CardContent>
+                    <Typography className={classes.cardTitle} color="textSecondary" gutterBottom>
+                      {content.cat}
+                    </Typography>
+                    <Typography variant="h5" component="h2">
+                      {content.title}
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                      {content.desc}
+                    </Typography>
+                  </CardContent>
+                  <CardMedia component="img" image={content.img} className={classes.cover} />
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </div>
+      </div>
+    );
+}
+
+{/* <div id="dataBanner" className={classes.stats}>
           <h1 className={classes.title}>Summary</h1>
           <h5 className={classes.subtitle}><span><img src={load} alt={""} className={classes.loading}></img></span>Jose is trying his best...</h5>
           <div>
@@ -126,29 +128,4 @@ export default function Projects() {
               <span>Total: 3</span>
             </Typography>
           </div>
-        </div>
-        <div id="projects">
-          {cards.map((content) => (
-            <Grid className={classes.restrict} container justify="center" alignItems="center">
-              <Grid item key={content.title}>
-                <Card className={classes.card}>
-                  <CardContent>
-                    <Typography className={classes.cardTitle} color="textSecondary" gutterBottom>
-                      {content.cat}
-                    </Typography>
-                    <Typography variant="h5" component="h2">
-                      {content.title}
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                      {content.desc}
-                    </Typography>
-                  </CardContent>
-                  <CardMedia component="img" image={content.img} className={classes.cover} />
-                </Card>
-              </Grid>
-            </Grid>
-          ))}
-        </div>
-      </div>
-    );
-}
+        </div> */}

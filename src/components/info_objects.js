@@ -4,11 +4,29 @@ import journey from '../assets/journey.png';
 import look from '../assets/look.png';
 import hobbies from '../assets/hobbies.png';
 import prog from '../assets/progress.png';
+import qt from '../assets/quantum_sim.JPG';
+import soul from '../assets/soultunes.JPG';
+import pmg from '../assets/physics_mini_games.JPG';
+import port from '../assets/portfolio.png';
 import frisbee from '../assets/Screenshot_20200825-224033_Video Player.jpg';
+import comp from '../assets/computer.jpg';
+import scs from '../assets/Profile.png';
+import skate from '../assets/skate.jpg';
+import jq from '../assets/jquery.png';
+import jqui from '../assets/jqui.png';
+import ang from '../assets/angular.png';
+import react from '../assets/react.png'; 
+import java from 'programming-languages-logos/src/java/java_64x64.png';
+import html from 'programming-languages-logos/src/html/html_64x64.png';
+import css from 'programming-languages-logos/src/css/css_64x64.png';
+import js from 'programming-languages-logos/src/javascript/javascript_64x64.png';
+import ts from 'programming-languages-logos/src/typescript/typescript_64x64.png';
+import py from 'programming-languages-logos/src/python/python_64x64.png';
+import php from 'programming-languages-logos/src/php/php_64x64.png';
 
+export default class InfoObjects{}
 
-let paragraphs = [];
-export default paragraphs = [
+export const paragraphs = [
     {
         title: "A Brief Look",
         text: "I am a student at Concordia University, and I am pursuing my Bachelor's of Computer Science. I am always challenging myself and looking for opportunities to learn more about the vast domain of computer science and to connect with people who have a drive to accomplish something great. Let's not forget to have fun either!",
@@ -30,3 +48,20 @@ export default paragraphs = [
         images: [hobbies, frisbee]
     }
 ];
+
+export const projects = [
+    {cat: "Website", title: "Portfolio Website", desc: "A home for everything me...", img: port, feat: true},
+    {cat: "Simulation", title: "Quantum Sim", desc: "A simulation for a quantum computer...", img: qt, feat: true},
+    {cat: "Applet", title: "Soultunes", desc: "App for listening to tunes based on the weather...", img: soul, feat: false},
+    {cat: "Game", title: "Physics Mini Games", desc: "A game for teaching physics...", img: pmg, feat: false}
+];
+
+export const about_images = [conc, van, scs, skate, comp];
+
+export const toolset = [java, js, html, css, ts, jq, react, ang, jqui, py, php];
+
+export const featured = [
+    {cat: "About Me", title: "Software Student", desc: "Pursuing a Bachelor of Computer Science at Concordia University."},
+    {cat: "Projects", title: "Quantum Sim", desc: "A simulation for a quantum computer."},
+    {cat: "Projects", title: "Portfolio", desc: "The making of this very same app."}
+  ];

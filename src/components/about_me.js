@@ -1,16 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Paper, Divider, GridList, GridListTile } from '@material-ui/core';
-import paragraphs from './about_me_txt';
-import forest from '../assets/20200725_155849.jpg';
-import nike from '../assets/20200327_224231.jpg';
-import voyageur from '../assets/20191011_174349_HDR.jpg';
-import expo from '../assets/20200328_000556.jpg';
-import feet from '../assets/20200613_200809.jpg';
-import board from '../assets/20200816_171612.jpg';
-import frisbee from '../assets/Screenshot_20200825-224033_Video Player.jpg';
-
-const images = [nike, board, expo, frisbee, feet];
+import { Grid, Divider, GridList, GridListTile } from '@material-ui/core';
+import { paragraphs, about_images } from './info_objects';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -23,17 +14,13 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
       textAlign: "left",
+      fontWeight: 300
     },
     text: {
       lineHeight: "2.5em",
     },
     par: {
       padding: "15px",
-    },
-    paper: {
-      color: "white",
-      backgroundColor: "rgba(45, 17, 121, 0.815)"
-      // backgroundColor: "rgba(240, 240, 240, 0.815)"
     },
     barImages: {
       height: "500px",
@@ -42,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     bar: {
       overflow: "hidden",
       height: "500px",
-      boxShadow: "0px 0px 5px grey",
     },
     sideIcon: {
       width: "64px",
@@ -53,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     sideImage: {
       maxWidth: "95%",
       height: "90%",
-      marginTop: "10%"
+      marginTop: "25%"
     }
 }));
 
@@ -62,8 +48,8 @@ export default function AboutMe() {
     return(
       <div>
         <div className="overlay"></div>
-        <GridList className={classes.bar} spacing={0} cols={images.length} cellHeight={500} alignItems="flex-start">
-          {images.map((im) => (
+        <GridList className={classes.bar} spacing={0} cols={about_images.length} cellHeight={500} alignItems="flex-start">
+          {about_images.map((im) => (
             <GridListTile cols={1}>
               <img src={im} alt="" className={classes.barImages} />
             </GridListTile>
@@ -75,18 +61,20 @@ export default function AboutMe() {
             <Grid item xs={3} justify="center">
               <img src={par.images[0]} alt={""} className={classes.sideIcon} />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={7}>
               <div className={classes.par}>
                 <h3 className={classes.title}>{par.title}</h3>
                 <Divider />
                 <p className={classes.text}>{par.text}</p>
               </div>
             </Grid>
-            <Grid item xs={3}>
-              <img src={par.images[1]} alt={""} className={classes.sideImage} />
+            <Grid item xs={2}>
+              
             </Grid>
           </Grid>
         ))}
       </div>
     );
 }
+
+{/* <img src={par.images[1]} alt={""} className={classes.sideImage} /> */}

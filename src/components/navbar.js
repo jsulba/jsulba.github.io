@@ -20,6 +20,10 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
         zIndex: 99999,
     },
+    darken: {
+        backgroundColor: "rgb(13, 15, 128)",
+        color: "white",
+    },
     menuButton: {
         marginRight: theme.spacing(2),
     },
