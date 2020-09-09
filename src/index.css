@@ -71,6 +71,10 @@ svg{
   height: 64px;
 }
 
+.MuiGrid-spacing-xs-6 {
+  margin: 0px !important;
+}
+
 .gallery img {
   max-height: 400px;
 }

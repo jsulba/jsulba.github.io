@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Paper, Card, CardContent, CardActions, Typography, Button, Divider } from '@material-ui/core';
+import { Grid, Paper, Card, CardContent, CardActions, CardMedia, Typography, Button, Divider } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import forest from '../assets/20200725_155849.jpg';
 import nike from '../assets/20200327_224231.jpg';
@@ -19,8 +19,10 @@ const useStyles = makeStyles((theme) => ({
       margin: "0px",
     },
     card: {
-      minWidth: 200,
-      maxWidth: 250,
+      minWidth: 250,
+      width: 350,
+      maxWidth: 350,
+      height: 400,
       backgroundColor: "rgba(240, 240, 240, 0.815)"
     },
     cardHolder: {
@@ -31,6 +33,13 @@ const useStyles = makeStyles((theme) => ({
     },
     cardTitle: {
       fontSize: "1.1em",
+    },
+    content: {
+      height: "130px"
+    },
+    cover: {
+      width: "100%",
+      height: "190px"
     },
     desc: {
       paddingTop: "1em"
@@ -113,11 +122,11 @@ export default function Welcome() {
         </div>
         <div className={classes.cardHolder}>
         <h3 className={classes.title}>Featured</h3>
-          <Grid className={classes.restrict} container spacing={2} justify="center" alignItems="center">
+          <Grid className={classes.restrict} container spacing={6} justify="center" alignItems="stretch">
             {featured.map((content) => (
               <Grid item key={content.title}>
                 <Card className={classes.card}>
-                <CardContent>
+                <CardContent className={classes.content}>
                   <Typography className={classes.cardTitle} color="textSecondary" gutterBottom>
                     {content.cat}
                   </Typography>
@@ -128,6 +137,7 @@ export default function Welcome() {
                     {content.desc}
                   </Typography>
                 </CardContent>
+                <CardMedia component="img" image={content.img} className={classes.cover} />
                 <CardActions>
                   <Link to={extractPath(content.cat)}>
                     <Button size="small">Read More &gt;</Button>

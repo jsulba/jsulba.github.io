@@ -58,10 +58,10 @@ export const projects = [
 
 export const about_images = [conc, van, scs, skate, comp];
 
-export const toolset = [java, js, html, css, ts, jq, react, ang, jqui, py, php];
+export const toolset = [jq, css, jqui, html, js, java, ts, react, ang, py, php];
 
 export const featured = [
-    {cat: "About Me", title: "Software Student", desc: "Pursuing a Bachelor of Computer Science at Concordia University."},
-    {cat: "Projects", title: "Quantum Sim", desc: "A simulation for a quantum computer."},
-    {cat: "Projects", title: "Portfolio", desc: "The making of this very same app."}
+    {cat: "About Me", title: "Software Student", desc: "Pursuing a Bachelor of Computer Science at Concordia University.", img: conc},
+    {cat: "Projects", title: "Quantum Sim", desc: "A simulation for a quantum computer.", img: qt},
+    {cat: "Projects", title: "Portfolio", desc: "The making of this very same app.", img: port}
   ];
