@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/jsulba.github.io/precache-manifest.dfbae56365611d13abac3b0539788240.js"
+  "/jsulba.github.io/precache-manifest.ba343511f663c45d574decc39de6d422.js"
 );
 
 self.addEventListener('message', (event) => {

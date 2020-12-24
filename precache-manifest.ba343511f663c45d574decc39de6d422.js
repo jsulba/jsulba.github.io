@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dea965a40b11dedcdfafef69b8318d4e",
+    "revision": "f73a5e336e317ae9884ea4cc00388e6e",
     "url": "/jsulba.github.io/index.html"
   },
   {
-    "revision": "1175c5de45be5992a8cd",
+    "revision": "4c7e0692c226c04cada6",
     "url": "/jsulba.github.io/static/css/main.1129589e.chunk.css"
   },
   {
-    "revision": "0771d105507d37f5e767",
-    "url": "/jsulba.github.io/static/js/2.588551c6.chunk.js"
+    "revision": "c1d6106b94fecff1f7eb",
+    "url": "/jsulba.github.io/static/js/2.84283ae7.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/jsulba.github.io/static/js/2.588551c6.chunk.js.LICENSE.txt"
+    "url": "/jsulba.github.io/static/js/2.84283ae7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1175c5de45be5992a8cd",
-    "url": "/jsulba.github.io/static/js/main.51398f51.chunk.js"
+    "revision": "4c7e0692c226c04cada6",
+    "url": "/jsulba.github.io/static/js/main.02ff4226.chunk.js"
   },
   {
     "revision": "b846e6bab48defb0cdda",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6d29f4e23ea600860bd2f0e9de4bdc43",
     "url": "/jsulba.github.io/static/media/concordia.6d29f4e2.jpg"
+  },
+  {
+    "revision": "86a465939d1744831c0432dd97404b03",
+    "url": "/jsulba.github.io/static/media/cpp.86a46593.png"
   },
   {
     "revision": "da5951edcce2e732ad0ba23139a2e660",
