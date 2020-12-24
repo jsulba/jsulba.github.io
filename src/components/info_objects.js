@@ -22,19 +22,19 @@ import css from 'programming-languages-logos/src/css/css_64x64.png';
 import js from 'programming-languages-logos/src/javascript/javascript_64x64.png';
 import ts from 'programming-languages-logos/src/typescript/typescript_64x64.png';
 import py from 'programming-languages-logos/src/python/python_64x64.png';
-import php from 'programming-languages-logos/src/php/php_64x64.png';
+import cpp from 'programming-languages-logos/src/cpp/cpp.png';
 
 export default class InfoObjects{}
 
 export const paragraphs = [
     {
         title: "A Brief Look",
-        text: "I am a student at Concordia University, and I am pursuing my Bachelor's of Computer Science. I am always challenging myself and looking for opportunities to learn more about the vast domain of computer science and to connect with people who have a drive to accomplish something great. Let's not forget to have fun either!",
+        text: "I'm currently studying at Concordia University where I'm working towards my Bachelor's Degree in Computer Science. I'm always challenging myself and looking for opportunities to learn more technologies and to connect with people who have a drive to accomplish something great. That's why I'm currently involved in the Software Engineering and Computer Science Society at Concordia, as their Vice President of Internal Affairs - more about that later! Morevoer, as you may have noticed, I'm already fairly familiar with a few languages like Java, JavaScript, TypeScript. I also have experience with frameworks like JQuery, Angular, and React. I have dabbled in other languages like Python, PHP, SQL, and C++, but I haven't quite implemented any notable projects with these.",
         images: [look, conc]
     },
     {
         title: "My Journey So Far",
-        text: "I started my career in Computer Science when I enrolled in CEGEP Vanier College in the Computer Science and Math program. Once I started developing and solving small problems, I knew it was my calling. I graduated from Vanier having been someone who was very involved with the community and excelled in nearly every subject. I am still proud of the efforts I put in to founding the Vanier Coding Club, which brought the people of my program and many other curious students together, in a community of diverse and motivated learners.",
+        text: "I started my career in Computer Science when I enrolled in CEGEP Vanier College in the Computer Science and Math program. As soon as I started developing with Java and solving small problems, as problem a solver at heart, I knew it was something I wanted to get better at. I graduated from Vanier having been someone who was very involved with the school community and excelled in nearly every subject. I am still proud of the efforts I put in to founding the Vanier Coding Club, which brought the people of my program and many other curious students together, in a community of diverse and motivated learners.",
         images: [journey, van]
     },
     {
@@ -58,7 +58,7 @@ export const projects = [
 
 export const about_images = [conc, van, scs, skate, comp];
 
-export const toolset = [jq, css, jqui, html, js, java, ts, react, ang, py, php];
+export const toolset = [jq, css, jqui, html, js, java, ts, react, ang, py, cpp];
 
 export const featured = [
     {cat: "About Me", title: "Software Student", desc: "Pursuing a Bachelor of Computer Science at Concordia University.", img: conc},
