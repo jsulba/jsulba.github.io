@@ -4,7 +4,7 @@ import journey from '../assets/journey.png';
 import look from '../assets/look.png';
 import hobbies from '../assets/hobbies.png';
 import prog from '../assets/progress.png';
-import qt from '../assets/quantum_sim.JPG';
+import qt from '../assets/quantum_sim.PNG';
 import soul from '../assets/soultunes.JPG';
 import pmg from '../assets/physics_mini_games.JPG';
 import port from '../assets/portfolio.png';
@@ -29,7 +29,7 @@ export default class InfoObjects{}
 export const paragraphs = [
     {
         title: "A Brief Look",
-        text: "I'm currently studying at Concordia University where I'm working towards my Bachelor's Degree in Computer Science. I'm always challenging myself and looking for opportunities to learn more technologies and to connect with people who have a drive to accomplish something great. That's why I'm currently involved in the Software Engineering and Computer Science Society at Concordia, as their Vice President of Internal Affairs - more about that later! Morevoer, as you may have noticed, I'm already fairly familiar with a few languages like Java, JavaScript, TypeScript. I also have experience with frameworks like JQuery, Angular, and React. I have dabbled in other languages like Python, PHP, SQL, and C++, but I haven't quite implemented any notable projects with these.",
+        text: "I'm currently studying at Concordia University where I'm working towards my Bachelor's Degree in Computer Science. I'm always challenging myself and looking for opportunities to learn more technologies and to connect with people who have a drive to accomplish something great. That's why I'm currently involved in the Software Engineering and Computer Science Society at Concordia, as their Vice President of Internal Affairs - more about that later! Moreover, as you may have noticed, I'm already fairly familiar with a few languages like Java, JavaScript, TypeScript. I also have experience with frameworks like JQuery, Angular, and React. I have dabbled in other languages like Python, PHP, SQL, and C++, but I haven't quite implemented any notable projects with these.",
         images: [look, conc]
     },
     {

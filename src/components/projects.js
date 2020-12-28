@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Card, CardMedia, CardContent, Grid, Divider } from '@material-ui/core';
+import { Typography, Card, CardMedia, CardContent, Grid, Divider, CardActions, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import { projects } from "./info_objects";
 
 
@@ -30,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+const extractPath = (name) => {
+  return "/projects/" + (name.toLowerCase()).replace(/\s/g, "_");
+};
+
 export default function Projects() {
     const classes = useStyles();
     return(
@@ -55,6 +60,11 @@ export default function Projects() {
                         </Typography>
                       </CardContent>
                       <CardMedia component="img" image={content.img} className={classes.cover} />
+                      <CardActions>
+                        <Link to={extractPath(content.title)}>
+                          <Button size="small">Read More &gt;</Button>
+                        </Link>
+                      </CardActions>
                     </Card>
                   </Grid>
                 );
@@ -82,6 +92,11 @@ export default function Projects() {
                     </Typography>
                   </CardContent>
                   <CardMedia component="img" image={content.img} className={classes.cover} />
+                  <CardActions>
+                    <Link to={extractPath(content.title)}>
+                      <Button size="small">Read More &gt;</Button>
+                    </Link>
+                  </CardActions>
                 </Card>
               </Grid>
             ))}
