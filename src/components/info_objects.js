@@ -56,7 +56,7 @@ export const projects = [
     {cat: "Game", title: "Physics Mini Games", desc: "A game for teaching physics...", img: pmg, feat: false}
 ];
 
-export const about_images = [conc, van, scs, skate, comp];
+export const about_images = [conc, van, scs, comp];
 
 export const toolset = [jq, css, jqui, html, js, java, ts, react, ang, py, cpp];
 

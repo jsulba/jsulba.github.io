@@ -77,7 +77,7 @@ export default function QuantumSim() {
                 {quantum_sim.outcomes}
             </Typography>
             <h2 className={classes.secondaryTitle}>Try It Yourself</h2>
-            <p className={classes.text}>You can download the <code>jar</code> file <a href={qtdemo} download>here</a>. You can also see the hackathon submission page <a href="https://devpost.com/software/quantum-computer-simulation">here</a>.</p>
+            <p className={classes.text}>You can download the JAR file <a href={qtdemo} download>here</a>. You can also see the hackathon submission page <a href="https://devpost.com/software/quantum-computer-simulation" target="_blank">here</a>.</p>
         </div>
     )
 }

@@ -76,7 +76,7 @@ export default function Soultunes() {
                 {soultunes.outcomes}
             </Typography>
             <h2 className={classes.secondaryTitle}>Try It Yourself</h2>
-            <p className={classes.text}>You can download the <code>jar</code> file <a href={qtdemo} download>here</a>. You can also see the hackathon submission page <a href="https://devpost.com/software/quantum-computer-simulation">here</a>.</p>
+            <p className={classes.text}>The JAR is currently unavailable. You can see the hackathon submission page <a href="https://devpost.com/software/soul-tunes" target="_blank">here</a>.</p>
         </div>
     )
 }

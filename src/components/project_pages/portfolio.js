@@ -71,12 +71,6 @@ export default function Portfolio() {
             <Typography className={classes.text} variant="body1" component="p">
                 {portfolio.challenges}
             </Typography>
-            <h2 className={classes.secondaryTitle}>Takeaways &amp; Outcomes</h2>
-            <Typography className={classes.text} variant="body1" component="p">
-                {portfolio.outcomes}
-            </Typography>
-            <h2 className={classes.secondaryTitle}>Try It Yourself</h2>
-            <p className={classes.text}>You can download the <code>jar</code> file <a href={qtdemo} download>here</a>. You can also see the hackathon submission page <a href="https://devpost.com/software/quantum-computer-simulation">here</a>.</p>
         </div>
     )
 }

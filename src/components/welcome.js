@@ -173,11 +173,11 @@ export default function Welcome() {
               <Paper><img src={expo} className={classes.image} alt={""} /></Paper>
             </Grid>
           </Grid>
-          <Grid container className={classes.root} spacing={3} justify="center">
+          {/* <Grid container className={classes.root} spacing={3} justify="center">
           <Grid item xs={8} >
               <Paper><img id="skateboard" src={board} className={classes.image} alt={""} /></Paper>
             </Grid>
-          </Grid>
+          </Grid> */}
         </div>
       </div>
     );
