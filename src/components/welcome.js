@@ -7,7 +7,7 @@ import nike from '../assets/20200327_224231.jpg';
 import voyageur from '../assets/20191011_174349_HDR.jpg';
 import expo from '../assets/20200328_000556.jpg';
 import feet from '../assets/20200613_200809.jpg';
-import board from '../assets/20200816_171612.jpg';
+// import board from '../assets/20200816_171612.jpg';
 import frisbee from '../assets/Screenshot_20200825-224033_Video Player.jpg';
 import { toolset, featured } from './info_objects';
 

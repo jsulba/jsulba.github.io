@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Divider, Typography } from '@material-ui/core';
 import { portfolio } from './project_descriptions';
-import qtdemo from '../../jars/McGillPhys19.jar';
 
 const useStyles = makeStyles((theme) => ({
     restrict: {
