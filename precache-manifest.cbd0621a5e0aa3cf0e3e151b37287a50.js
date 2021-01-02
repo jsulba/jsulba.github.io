@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1dfad81ad82300a609102debdfa9163b",
+    "revision": "18069ea895ecdd638c36f08355eda6be",
     "url": "/jsulba.github.io/index.html"
   },
   {
-    "revision": "ab972f63cbbc2cc79f02",
-    "url": "/jsulba.github.io/static/css/main.1129589e.chunk.css"
+    "revision": "6959f71f41051bc368cf",
+    "url": "/jsulba.github.io/static/css/main.c9cf05b7.chunk.css"
   },
   {
-    "revision": "b82156461110736b8ae6",
-    "url": "/jsulba.github.io/static/js/2.0d012e08.chunk.js"
+    "revision": "056f3b6d202a51064f01",
+    "url": "/jsulba.github.io/static/js/2.d2cc4bc0.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/jsulba.github.io/static/js/2.0d012e08.chunk.js.LICENSE.txt"
+    "url": "/jsulba.github.io/static/js/2.d2cc4bc0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ab972f63cbbc2cc79f02",
-    "url": "/jsulba.github.io/static/js/main.0da7a13e.chunk.js"
+    "revision": "6959f71f41051bc368cf",
+    "url": "/jsulba.github.io/static/js/main.b58e7306.chunk.js"
   },
   {
     "revision": "b846e6bab48defb0cdda",
