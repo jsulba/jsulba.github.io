@@ -6,6 +6,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a{
+  font-family: 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
 .link {
   color: black;
   text-decoration-line: none;
@@ -73,6 +77,10 @@ svg{
 
 .MuiGrid-spacing-xs-6 {
   margin: 0px !important;
+}
+
+.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedText.MuiButtonGroup-groupedTextHorizontal.MuiButtonGroup-groupedText {
+  border-color: rgb(128,128,128);
 }
 
 .gallery img {
